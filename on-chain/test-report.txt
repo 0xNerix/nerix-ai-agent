@@ -1,0 +1,114 @@
+WARNING: You are currently using Node.js v23.5.0, which is not supported by Hardhat. This can lead to unexpected behavior. See https://hardhat.org/nodejs-versions
+
+
+[dotenv@17.2.1] injecting env (7) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+
+
+  NerixGame Contract
+    Deployment and Initialization
+      ✔ Should set the right owner
+      ✔ Should initialize with correct values
+      ✔ Should not allow starting the game twice
+    Message Fee Calculation
+      ✔ Should calculate the base message fee correctly
+      ✔ Should increase message fee after messages are sent
+      ✔ Should apply first mover discount on the first message
+      ✔ Should apply NFT discounts correctly
+      ✔ Should cap NFT fee discounts at MAX_FEE_DISCOUNT (80%)
+    Message Sending
+      ✔ Should allow sending a valid message with correct payment
+      ✔ Should reject messages with insufficient payment
+      ✔ Should enforce message cooldown period
+Calculated max length: 830
+      ✔ Should enforce character limit based on user's NFT bonuses
+      ✔ Should distribute fees correctly between reward pools
+      ✔ Should refund excess payment
+    Game Winner Declaration
+      ✔ Should only allow owner to declare a winner
+      ✔ Should transfer the full reward to the winner
+      ✔ Should mint appropriate NFTs to participants
+      ✔ Should emit GameWon event when declaring a winner
+      ✔ Should revert if declaring a winner for a non-participant
+      ✔ Should revert if declaring the zero address as winner
+    Game Iteration Management
+      ✔ Should correctly transition to the next iteration after a winner
+Is user1 still a participant? false
+      ✔ Should clear all participant data when starting a new iteration
+      ✔ Should increment NFT iteration count when moving to the next iteration
+    Team Funds Management
+      ✔ Should only allow the owner to withdraw team funds
+      ✔ Should transfer all team funds to the owner when withdrawn
+      ✔ Should emit TeamFundsWithdrawn event when withdrawing team funds
+      ✔ Should revert if trying to withdraw when team pool is empty
+    Pause and Unpause
+      ✔ Should only allow the owner to pause the game
+      ✔ Should prevent message sending when paused
+      ✔ Should prevent declaring a winner when paused
+    Message Fee Protection
+      ✔ Should cap message fee at MAX_MESSAGE_FEE (826ms)
+      ✔ Should maintain fee calculation accuracy under the cap
+      ✔ Should handle extreme message counts gracefully (705ms)
+    Context and Message Length Helpers
+      ✔ Should return the correct context size based on NFT bonuses
+User1 max length: 890
+      ✔ Should return the correct max message length based on NFT bonuses
+User1 max length: 890
+User2 max length with NFT 4: 860
+User3 max length with NFT 9: 830
+      ✔ Should return the correct max message length based on NFT bonuses (73ms)
+    Security Tests
+      ✔ Should prevent reentrancy on setNerixNFTAddress (41ms)
+      ✔ Should have nonReentrant modifier on setNerixNFTAddress
+      ✔ Should only allow owner to call setNerixNFTAddress
+
+  NerixNFT Contract
+    Deployment
+      ✔ Should set the correct owner
+      ✔ Should have the correct name and symbol
+      ✔ Should start at iteration 1
+    Game Contract Management
+      ✔ Should set and get the game contract correctly
+      ✔ Should only allow the owner to set the game contract
+      ✔ Should revert when setting the zero address as game contract
+      ✔ Should emit GameContractSet event when setting game contract
+    Iteration Management
+      ✔ Should only allow the game contract to increment iteration
+    Base URI Management
+      ✔ Should set the base URI correctly
+      ✔ Should emit BaseURISet event when setting base URI
+      ✔ Should only allow the owner to set the base URI
+    NFT Minting
+      ✔ Should mint Community NFT correctly
+      ✔ Should mint Challenger NFT correctly
+      ✔ Should mint Winner NFT correctly
+      ✔ Should reject minting to zero address
+    NFT Ownership
+      ✔ Should correctly report NFT balances
+      ✔ Should return correct NFT info
+      ✔ Should revert when querying non-existent NFT
+Token URIs: https://nerixai.com/api/nft/community/1/1 https://nerixai.com/api/nft/community/1/2 https://nerixai.com/api/nft/challenger/1/3 https://nerixai.com/api/nft/winner/1/4
+New specific NFT URIs: https://nerixai.com/api/nft/community/5/5 https://nerixai.com/api/nft/challenger/6/6 https://nerixai.com/api/nft/winner/7/7
+      ✔ Should format token URIs correctly
+    NFT Transfer Restrictions
+      ✔ Should prevent Community NFT transfers
+      ✔ Should prevent Winner/Challenger NFT transfer in same iteration
+      ✔ Should allow Winner/Challenger NFT transfer after 1 iteration
+      ✔ Should calculate transfer lock correctly for multiple iterations
+      ✔ Should allow minting and burning regardless of restrictions
+    Interface Support
+      ✔ Should support ERC721 interface
+      ✔ Should support ERC721Metadata interface
+
+  Nerix System Integration Tests
+    Complete Game Lifecycle
+      ✔ Should handle a full game cycle with multiple users and iterations
+    Edge Case: Fee Inflation and Discount Interaction
+      ✔ Should correctly handle high message fees with NFT discounts (42ms)
+    NFT Legacy Bonus Verification
+      ✔ Should correctly apply legacy bonuses for NFTs from earlier iterations
+    Multi-NFT Strategy
+      ✔ Should allow users to selectively use different NFTs for different benefits
+
+
+  69 passing (3s)
+

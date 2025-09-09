@@ -1,0 +1,38 @@
+{
+  "gameConfig": {
+    "isIterative": true,
+    "baseMessageFee": "0.01",
+    "messageGrowthRate": 78,
+    "messageCooldown": 30,
+    "initialRewardPool": "0.1",
+    "currentPoolShare": 60,
+    "nextPoolShare": 20,
+    "teamPoolShare": 20,
+    "maxFeeDiscount": 80,
+    "baseCharacterLimit": 500,
+    "firstMoverDiscount": 10,
+    "maxMessageFee": "2"
+  },
+  "nftConfig": {
+    "name": "Nerix NFT",
+    "symbol": "NRIX",
+    "baseURI": "https://nerixai.com/api/nft/",
+    "transferLockIterations": 1
+  },
+  "networks": {
+    "bnbTestnet": {
+      "gameConfig": {
+        "baseMessageFee": "0.01",
+        "initialRewardPool": "0.1",
+        "maxMessageFee": "2"
+      }
+    },
+    "bnb": {
+      "gameConfig": {
+        "baseMessageFee": "0.01",
+        "initialRewardPool": "0.1",
+        "maxMessageFee": "2"
+      }
+    }
+  }
+}
