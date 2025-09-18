@@ -34,7 +34,7 @@ All challenges on the platform follow a sophisticated economic model where each 
 
 **🎯 Prize Pool Structure**
 - Starting amount: **2.5 BNB (~$2,000)** plus carried-over funds
-- Fee structure: **0.012 BNB (~$10)** with **0.78%** exponential growth (capped at 0.6 BNB)
+- Fee structure: **0.012 BNB (~$10)** with **0.78%** exponential growth
 - Potential: Prize pools can exceed **220 BNB (~$188,000)**
 
 **💰 Fee Distribution (60/20/20 Model)**
