@@ -48,7 +48,7 @@ Each completed game marks a new **iteration** where the AI updates its defenses 
 
 The system features comprehensive **NFT** rewards: Winner and Challenger NFTs provide enhanced gameplay benefits and are **valuable, tradeable assets**, while Community NFTs are **soulbound tokens** with basic improvements. The most critical advantage of Winner and Challenger NFTs is their **fee reduction capability**, providing significant cost savings especially as message fees reach hundreds of dollars in later game stages. The **legacy bonus system** applies to all NFT attributes, making older NFTs exponentially more powerful over time - an iteration 1 Winner NFT can grow from 300 to 900 characters and 20% to 60% fee reduction by iteration 100.
 
-**For more detailed technical documentation and system architecture, visit our** [System Overview](https://nerixia.com/system-overview)
+**For more detailed technical documentation and system architecture, visit our** [System Overview](https://nerixai.com/system-overview)
 
 ## AI Bug Bounty & Security Research
 
